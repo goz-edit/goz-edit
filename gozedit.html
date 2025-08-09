@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOZ Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF5EE;
+      color: #1D503A;
+      text-align: center;
+    }
+    header {
+      padding: 50px 20px;
+    }
+    .logo {
+      width: 120px;
+      animation: fadeInScale 1.5s ease forwards;
+    }
+    @keyframes fadeInScale {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .work-with-me {
+      display: inline-block;
+      background-color: #1D503A;
+      color: #FAF5EE;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 20px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .work-with-me:hover {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .social-links {
+      margin-top: 15px;
+    }
+    .icon-box {
+      display: inline-block;
+      margin: 0 8px;
+      padding: 10px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .icon-box:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+    .icon-box img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* About Section */
+    #about {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+    #about h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    #about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #1D503A;
+    }
+
+    /* Work Section */
+    #work {
+      padding: 40px 20px;
+      max-width: 400px; /* smaller width */
+      margin: auto;
+      text-align: left;
+    }
+    #work h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #1D503A;
+    }
+    #work .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    #work iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #1D503A;
+      color: #FAF5EE;
+      text-align: center;
+    }
+    footer .social-links a {
+      margin: 0 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="GOZ Profile logo.png" alt="GOZ Logo" class="logo" />
+    <h1>Business & Explainer Video Specialist</h1>
+    <p>I create engaging videos that help businesses connect, explain, and convert.</p>
+    <a href="https://instagram.com/goz_edit" class="work-with-me">Work with Me</a>
+    <div class="social-links">
+      <a href="https://x.com/goz_edit" target="_blank" class="icon-box">
+        <img src="x.jpg" alt="X" />
+      </a>
+      
+      <a href="https://instagram.com/goz_edit" target="_blank" class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+      </a>
+      <a href="mailto:ismailtadesse1@gmail.com" class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" />
+      </a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m a passionate video editor specializing in business and explainer videos.
+      I help brands turn complex ideas into clear, engaging stories that connect with audiences and drive results.
+      With a focus on quality visuals, crisp editing, and impactful messaging, my goal is to make your content
+      stand out in today’s fast-paced digital world.
+    </p>
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/nWlS7fdg5Uc"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="My Work Video"
+      ></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 GOZ. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://x.com/goz_edit" target="_blank" class="icon-box">
+        <img src="x.jpg" alt="X" />
+
+      </a>
+      <a href="https://instagram.com/goz_edit" target="_blank" class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+      </a>
+      <a href="mailto:ismailtadesse1@gmail.com" class="icon-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" />
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
